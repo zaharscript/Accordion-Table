@@ -1,0 +1,123 @@
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+/* line 3, ../../../OneDrive/Desktop/Web Development/to-do list chat gpt/Accordian table.scss */
+.pcs:after {
+  content: " pcs";
+}
+
+/* line 4, ../../../OneDrive/Desktop/Web Development/to-do list chat gpt/Accordian table.scss */
+.cur:before {
+  content: "$";
+}
+
+/* line 5, ../../../OneDrive/Desktop/Web Development/to-do list chat gpt/Accordian table.scss */
+.per:after {
+  content: "%";
+}
+
+/* line 7, ../../../OneDrive/Desktop/Web Development/to-do list chat gpt/Accordian table.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 8, ../../../OneDrive/Desktop/Web Development/to-do list chat gpt/Accordian table.scss */
+body {
+  padding: .2em 2em;
+}
+
+/* line 10, ../../../OneDrive/Desktop/Web Development/to-do list chat gpt/Accordian table.scss */
+table {
+  width: 100%;
+}
+
+/* line 12, ../../../OneDrive/Desktop/Web Development/to-do list chat gpt/Accordian table.scss */
+table th {
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+/* line 13, ../../../OneDrive/Desktop/Web Development/to-do list chat gpt/Accordian table.scss */
+table th, table td {
+  padding: .4em;
+}
+
+/* line 21, ../../../OneDrive/Desktop/Web Development/to-do list chat gpt/Accordian table.scss */
+table.fold-table > tbody > tr.view td, table.fold-table > tbody > tr.view th {
+  cursor: pointer;
+}
+
+/* line 22, ../../../OneDrive/Desktop/Web Development/to-do list chat gpt/Accordian table.scss */
+table.fold-table > tbody > tr.view td:first-child,
+table.fold-table > tbody > tr.view th:first-child {
+  position: relative;
+  padding-left: 20px;
+}
+
+/* line 26, ../../../OneDrive/Desktop/Web Development/to-do list chat gpt/Accordian table.scss */
+table.fold-table > tbody > tr.view td:first-child:before,
+table.fold-table > tbody > tr.view th:first-child:before {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  width: 9px;
+  height: 16px;
+  margin-top: -8px;
+  font: 16px fontawesome;
+  color: #999;
+  content: "\f0d7";
+  transition: all .3s ease;
+}
+
+/* line 37, ../../../OneDrive/Desktop/Web Development/to-do list chat gpt/Accordian table.scss */
+table.fold-table > tbody > tr.view:nth-child(4n-1) {
+  background: #eee;
+}
+
+/* line 38, ../../../OneDrive/Desktop/Web Development/to-do list chat gpt/Accordian table.scss */
+table.fold-table > tbody > tr.view:hover {
+  background: #000;
+  color: white;
+}
+
+/* line 39, ../../../OneDrive/Desktop/Web Development/to-do list chat gpt/Accordian table.scss */
+table.fold-table > tbody > tr.view.open {
+  background: tomato;
+  color: white;
+}
+
+/* line 43, ../../../OneDrive/Desktop/Web Development/to-do list chat gpt/Accordian table.scss */
+table.fold-table > tbody > tr.view.open td:first-child:before, table.fold-table > tbody > tr.view.open th:first-child:before {
+  transform: rotate(-180deg);
+  color: #333;
+}
+
+/* line 52, ../../../OneDrive/Desktop/Web Development/to-do list chat gpt/Accordian table.scss */
+table.fold-table > tbody > tr.fold {
+  display: none;
+}
+
+/* line 54, ../../../OneDrive/Desktop/Web Development/to-do list chat gpt/Accordian table.scss */
+table.fold-table > tbody > tr.fold.open {
+  display: table-row;
+}
+
+/* line 62, ../../../OneDrive/Desktop/Web Development/to-do list chat gpt/Accordian table.scss */
+.fold-content {
+  padding: .5em;
+}
+
+/* line 64, ../../../OneDrive/Desktop/Web Development/to-do list chat gpt/Accordian table.scss */
+.fold-content h3 {
+  margin-top: 0;
+}
+
+/* line 65, ../../../OneDrive/Desktop/Web Development/to-do list chat gpt/Accordian table.scss */
+.fold-content > table {
+  border: 2px solid #ccc;
+}
+
+/* line 68, ../../../OneDrive/Desktop/Web Development/to-do list chat gpt/Accordian table.scss */
+.fold-content > table > tbody tr:nth-child(even) {
+  background: #eee;
+}
+
+/*# sourceMappingURL=Accordian table.css.map */
